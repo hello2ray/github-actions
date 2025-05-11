@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  Validate Code:
+  Validate_Code:
     runs-on: ubuntu-latest
 
     steps:
