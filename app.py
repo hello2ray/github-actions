@@ -1,3 +1,4 @@
+# This is the method we have to test"
 def add(a, b):
     return a + b
 
