@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  docker:
+  Docker_Build_And_Push:
     runs-on: ubuntu-latest
     env:
       IMAGE_NAME: sanayay123/sample-python-app
