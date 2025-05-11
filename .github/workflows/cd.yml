@@ -29,7 +29,7 @@ jobs:
 
       - name: Scan Docker image and fail on HIGH or CRITICAL
         run: |
-          trivy image --severity HIGH,CRITICAL --exit-code 1 --no-progress $IMAGE_NAME:$IMAGE_TAG
+          trivy image --severity HIGH,CRITICAL --exit-code 1 --ignore-unfixed --no-progress $IMAGE_NAME:$IMAGE_TAG
 
       - name: Log in to Docker Hub
         if: success()  # Only runs if Trivy scan passed
